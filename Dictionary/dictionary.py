@@ -1,0 +1,52 @@
+a_dict = {'color': 'blue', 'fruit': 'apple', 'pet': 'dog'}
+print("----------- simply iterate ----------")
+for key in a_dict:
+    print(key, ' -> ', a_dict[key])
+print('\n')
+    
+# iterate
+print("-------- dict.keys() ---------------") 
+keys = a_dict.keys()
+print('only keys -> ' ,keys)
+print("iterate through keys() ")
+for key in a_dict.keys():
+    print(key)
+    print(key , " -> " , a_dict[key])
+print('\n')
+
+
+print("-------- dict.items() ---------------") 
+dict_items = a_dict.items();
+print("using items() -> ", dict_items);
+
+# Iterate through items
+print("Iterate through items() in dict")
+for item in a_dict.items(): 
+    print(type(item)) #type -> tuple
+#can be used like this too
+# for key, value in a_dict.items():
+#     print(key , " - > ", value)
+print('\n')
+
+# Iterate through items
+print("-------- dict.values() ---------------")
+value = a_dict.values()
+print("only values -> " , value)
+print("Iterate through values in dict")
+# Using .values(), you’ll be getting access to only the values of a_dict, without dealing with the keys.
+for value in a_dict.values():
+    print(value)
+print('\n')
+
+print("------------ in operator ----------")
+# in operator to check whether the element is in dict or not
+print('pet' in a_dict.keys())
+print('pet' in a_dict.values())
+print('pet' in a_dict.items())
+print('apple' in a_dict.values())
+print('\n')
+
+print("----------- delete a key ------------")
+print("before delete pet -> ", a_dict)
+del a_dict['pet']
+print("after deleted pet -> ", a_dict)
