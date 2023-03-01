@@ -50,3 +50,8 @@ print("----------- delete a key ------------")
 print("before delete pet -> ", a_dict)
 del a_dict['pet']
 print("after deleted pet -> ", a_dict)
+print("\n")
+
+print("-------------- dict.get() --------------")
+print("get value from given key -> ", a_dict.get('pet')) #None
+print("get value from given key -> " , a_dict.get('fruit'))
