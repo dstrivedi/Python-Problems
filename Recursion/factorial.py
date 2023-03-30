@@ -9,4 +9,4 @@ def fact(n):
 print(fact(4))
 print(fact(6))
 print(fact(10))
-print(fact(-1))
+# print(fact(-1))
