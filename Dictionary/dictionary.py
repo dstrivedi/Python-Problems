@@ -39,7 +39,10 @@ for value in a_dict.values():
 print('\n')
 
 print("------------ in operator ----------")
+#when you use `in` in list, it checks for the element in the list
+# when you use `in` in the dict, it checks for the key in the dict
 # in operator to check whether the element is in dict or not
+print('pet' in a_dict) #by default checked for key in dictionary
 print('pet' in a_dict.keys())
 print('pet' in a_dict.values())
 print('pet' in a_dict.items())
@@ -55,3 +58,14 @@ print("\n")
 print("-------------- dict.get() --------------")
 print("get value from given key -> ", a_dict.get('pet')) #None
 print("get value from given key -> " , a_dict.get('fruit'))
+print("\n")
+
+
+print("-"*10," change dict ","-"*10)
+str_dict = {
+    "a":"apple", #this will change to amaze
+    "b":"ball",
+    "c":"cat",
+    "a":"amaze"
+}
+print(str_dict)

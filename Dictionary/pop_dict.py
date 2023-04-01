@@ -10,8 +10,10 @@
 
 print("------------ dict.pop(key,def) ----------------")
 test_dict = {"Nikhil": 7, "Akshat": 1, "Akash": 2}
-print(test_dict)
-print("after poping -> ", test_dict["Nikhil"]) #7
+print(test_dict.pop("Nikhil"))
+print("after poping -> ", test_dict) #7
+print(test_dict.pop("Nikhil",None)) #if key doesn't exist , returns None as default value
+# del test_dict["Nikhil"]
 # print(test_dict[1]) #keyError
 # print(test_dict[1,0]) 
 print("\n")
