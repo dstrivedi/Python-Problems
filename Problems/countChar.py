@@ -1,7 +1,4 @@
 #Avoid Spaces in string length
-from os import remove
-
-
 def countChar(str):
     cnt = 0
     for i in range(len(str)):
