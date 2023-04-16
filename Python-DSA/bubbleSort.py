@@ -1,3 +1,6 @@
+# Time Complexity: O(N2)
+# Auxiliary Space: O(1) 
+
 def bubble_sort(arr:list) -> list:
     for i in range(len(arr)):
         for j in range(i, len(arr)):
