@@ -8,7 +8,7 @@ print("deque : ", dq)
 # inserts 4 at the end of deque
 dq.append(6)
 
-#to insert element at left end
+# to insert element at left end
 dq.appendleft(0)
 
 print("deque after append and appendleft : ",dq)

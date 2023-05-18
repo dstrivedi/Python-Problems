@@ -1,3 +1,4 @@
+# no size limit
 class Queue:
     def __init__(self) -> None:
         self.list = []
